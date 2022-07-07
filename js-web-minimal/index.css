@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+.chat {
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.question-area {
+  width: 300px;
+  margin: 0px auto;
+}
+
+.question {
+  width: 80%;
+  margin: 0px auto;
+  float: left;
+}
