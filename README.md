@@ -29,3 +29,11 @@ See [memori-api-client](https://github.com/memori-ai/memori-api-client) and the 
 <p align="center">
   <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/main/js-web-minimal/demo.png" alt="Minimal Web Client screenshot">
 </p>
+
+## Minimal Python Client
+
+[Demo](./python-minimal/example.py)
+
+<p align="center">
+  <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/main/python-minimal/demo.svg" alt="Python Client recording">
+</p>
