@@ -11,7 +11,7 @@ Here you can find examples for integrations and demo
 ## Minimal Node Client
 
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/main/node-minimal/demo.svg" alt="Node Client recording">
+  <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/b1f1807/node-minimal/demo.svg" alt="Node Client recording">
 </p>
 
 ## Minimal Web Client JS
