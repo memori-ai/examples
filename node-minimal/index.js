@@ -1,7 +1,7 @@
 const fetch = require("cross-fetch");
 const readline = require("readline");
 
-let state = null;
+let sessionID = null;
 
 const startConversation = () => {
   fetch("https://engine.memori.ai/memori/v2/session", {
@@ -15,10 +15,14 @@ const startConversation = () => {
   })
     .then((response) => response.json())
     .then((result) => {
-      state = result;
+      if (!result?.sessionID) {
+        console.error("Received no session ID");
+        return;
+      }
+      sessionID = result?.sessionID;
 
-      if (state.currentState.emission)
-        console.log(`Nunzio: ${state.currentState.emission}`);
+      let emission = result?.currentState?.emission;
+      if (emission) console.log(`Nunzio: ${emission}`);
 
       handleConversation();
     })
@@ -32,24 +36,24 @@ const handleConversation = () => {
   });
 
   commandLineIO.question("You: ", (question) => {
-    fetch(
-      `https://engine.memori.ai/memori/v2/TextEnteredEvent/${state.sessionID}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          text: question,
-        }),
-      }
-    )
+    if (!sessionID) {
+      console.log("No session ID");
+      return;
+    }
+
+    fetch(`https://engine.memori.ai/memori/v2/TextEnteredEvent/${sessionID}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: question,
+      }),
+    })
       .then((response) => response.json())
       .then((result) => {
-        state = result;
-
-        if (state.currentState.emission)
-          console.log(`Nunzio: ${state.currentState.emission}`);
+        let emission = result?.currentState?.emission;
+        if (emission) console.log(`Nunzio: ${emission}`);
       })
       .catch((error) => console.log("error", error))
       .finally(() => {
