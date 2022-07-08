@@ -35,5 +35,5 @@ See [memori-api-client](https://github.com/memori-ai/memori-api-client) and the 
 [Demo](./python-minimal/example.py)
 
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/main/python-minimal/demo.svg" alt="Python Client recording">
+  <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/a3c73db/python-minimal/demo.svg" alt="Python Client recording">
 </p>
