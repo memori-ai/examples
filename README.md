@@ -8,6 +8,10 @@ Here you can find examples for integrations and demo
   <img width="600" src="https://raw.githubusercontent.com/memori-ai/examples/main/embed/demo.png" alt="Embedded widget">
 </p>
 
+## SDK TypeScript
+
+See [memori-api-client](https://github.com/memori-ai/memori-api-client).
+
 ## Minimal Node Client
 
 <p align="center">
