@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@memori.ai/memori-api-client@memori-ai/memori-api-client#073b52a158463a86008996c3c83d1991eddb6b18":
+"@memori.ai/memori-api-client@0.1.0":
   version "0.1.0"
-  resolved "https://codeload.github.com/memori-ai/memori-api-client/tar.gz/073b52a158463a86008996c3c83d1991eddb6b18"
+  resolved "https://registry.yarnpkg.com/@memori.ai/memori-api-client/-/memori-api-client-0.1.0.tgz#aede5e6f45a7d7da8d940cd55e641f07b6c9828e"
+  integrity sha512-NHyk9aVQgB8GGU3R7NBYwnMj5WIyk+T4Rh4z2eoMc4nWNpdbdvM6D6SwRec4N4oNLin4Q+zdJjVbhBVBRHZaOg==
   dependencies:
     cross-fetch "^3.1.5"
     microsoft-cognitiveservices-speech-sdk "1.22.0"
