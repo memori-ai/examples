@@ -1,0 +1,9 @@
+#root, body {
+  width: 100%;
+}
+
+.ChatApp {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
