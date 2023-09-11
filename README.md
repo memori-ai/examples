@@ -65,10 +65,10 @@ See [memori-api-client](https://github.com/memori-ai/memori-api-client) and the 
 
 Webhook for an intent handler written in TypeScript (runs on CF Workers).
 
-[Example](./intents/intent-webhook/index.ts)
+[Example](./intents/intent-webhook/src/index.ts)
 
 ### Intent Slot webhook (TypeScript)
 
 Webhook for an intent slot handler written in TypeScript (runs on CF Workers).
 
-[Example](./intents/slotvalues-webhook/index.ts)
+[Example](./intents/slotvalues-webhook/src/index.ts)
