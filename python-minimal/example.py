@@ -2,7 +2,7 @@ import requests
 import json
 
 res = requests.post(
-    "https://backend.memori.ai/memori/v2/session",
+    "https://engine.memori.ai/memori/v2/session",
     json={"memoriId": "9b0a2913-d3d8-4e98-a49d-6e1c99479e1b"},
     headers={"Content-Type": "application/json"}
 )
