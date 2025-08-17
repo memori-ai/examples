@@ -13,6 +13,7 @@ fetch("https://engine.memori.ai/memori/v2/session", {
   },
   body: JSON.stringify({
     memoriId: "1afe57c6-1b69-4a61-96ea-52bf7b8d158e",
+    birthDate: "1986-04-24T13:38:07.728Z"
   }),
 })
   .then((response) => response.json())
