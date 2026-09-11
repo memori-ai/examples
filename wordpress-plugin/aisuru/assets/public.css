@@ -1,0 +1,29 @@
+.aisuru-embed {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.aisuru-embed > memori-client,
+.aisuru-embed > memori-client > div,
+.aisuru-embed > memori-client #memori-root {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.aisuru-layout-website_assistant {
+    min-height: 0;
+    overflow: visible;
+}
+
+@media (max-width: 782px) {
+    .aisuru-embed {
+        min-height: 520px;
+    }
+
+    .aisuru-layout-website_assistant {
+        min-height: 0;
+    }
+}
